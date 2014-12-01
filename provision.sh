@@ -39,8 +39,7 @@ setup_tomcat() {
   cp /vagrant_share/tomcat-users.xml /home/vagrant/apache-tomcat-8.0.15/conf/
   cp /vagrant_share/setenv.sh /home/vagrant/apache-tomcat-8.0.15/bin/
   rm -r /home/vagrant/apache-tomcat-8.0.15/webapps/ROOT/
-  mv /home/vagrant/trackr-backend/build/libs/trackr-1.0_0.war /home/vagrant/trackr-backend/build/libs/ROOT.war
-  cp /home/vagrant/trackr-backend/build/libs/ROOT.war /home/vagrant/apache-tomcat-8.0.15/webapps/
+  mv /home/vagrant/trackr-backend/build/libs/trackr-1.0_0.war /home/vagrant/apache-tomcat-8.0.15/webapps/ROOT.war
 }
 
 clone_frontend() {

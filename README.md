@@ -14,4 +14,4 @@ It will check out [the backend](https://github.com/techdev-solutions/trackr-back
 The backend will run on a Tomcat 8 (you can access the manager app using login `trackr:trackr`).
 While the frontend will be served from NGINX.
 
-Once the provisioner has finished you can access trackr at http://localhost:9090
+Once the provisioner has finished you can access trackr at [http://localhost:9090](http://localhost:9090)
