@@ -35,9 +35,9 @@ setup_tomcat() {
   cd /home/vagrant/
   wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.15/bin/apache-tomcat-8.0.15.tar.gz
   tar -xzvf apache-tomcat-8.0.15.tar.gz
-  sudo chown -R vagrant:vagrant apache-tomcat-8.0.15/
   cp /vagrant_share/tomcat-users.xml /home/vagrant/apache-tomcat-8.0.15/conf/
   cp /vagrant_share/setenv.sh /home/vagrant/apache-tomcat-8.0.15/bin/
+  sudo chown -R vagrant:vagrant apache-tomcat-8.0.15/
   rm -r /home/vagrant/apache-tomcat-8.0.15/webapps/ROOT/
   mv /home/vagrant/trackr-backend/build/libs/trackr-1.0_0.war /home/vagrant/apache-tomcat-8.0.15/webapps/ROOT.war
 }
